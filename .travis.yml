@@ -18,7 +18,7 @@ after_success:
   #Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take above images and push to docker hub
-  - docker push handzel/multi-client
-  - docker push handzel/multi-nginx
-  - docker push handzel/multi-server
-  - docker push handzel/multi-worker
+  - docker push handzel/m-client
+  - docker push handzel/m-nginx
+  - docker push handzel/m-server
+  - docker push handzel/m-worker
